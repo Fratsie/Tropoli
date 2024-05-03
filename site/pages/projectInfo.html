@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/assets/icon32x32.png" type="image/x-icon">
+    <title id="projectTitle">Test</title>
+
+    <script src="../script.js"></script>
+    <script src="https://kit.fontawesome.com/123823bc9e.js" crossorigin="anonymous"></script>
+</head>
+<body id="projectInfo" onload="getProjectName('projectTitle', 'VIXIONART'), getProjectName('projectName', ''), getProjectDetails('projectDescription'), checkOutOfBorder('projectText'), checkNavBarCollapse('projectInfo')">
+
+    <div class="container" onclick="getProjectName()">
+        <div id="projectInfoNav" class="navbar">
+            <h1 style="font-family: fantasy; letter-spacing: 2px; margin-top: 10px; margin-bottom: 10px;">
+                VIXIONART
+            </h1>
+
+            <a id="link1" class="link" href="../index.html" onclick="localStorage.clear()">HOME</a>
+            <a id="link2" class="link" href="/pages/projects.html" style="text-decoration: underline solid black;" onclick="localStorage.clear()">PROJECTS</a>
+            <a id="link3" class="link" href="/pages/contactUs.html" onclick="localStorage.clear()">CONTACT US</a>
+            <a id="link4" class="link" href="/pages/aboutUs.html" onclick="localStorage.clear()">ABOUT US</a>
+            <a id="link5" class="link" href="/pages/services.html" onclick="localStorage.clear()">OUR SERVICES</a>
+        </div>
+    </div>
+
+    <div id="projectTextParent" style="height: 100vh; background-color: #5F5980; overflow: hidden;">
+        <div id="projectText" style="position: relative; top: 20vh; text-align: center;">
+            <h2 id="projectName" class="header"></h2>
+
+            <p id="projectDescription" style="color: white; padding: 10px; max-width: 100vw; font-family: cursive; font-size: 15px;"></p>
+
+            <img id="Screen1" class="ImageScreenshot" src="" alt="screenshot 1">
+            <img id="Screen2" class="ImageScreenshot" src="" alt="screenshot 2">
+            <img id="Screen3" class="ImageScreenshot" src="" alt="screenshot 3">
+            <img id="Screen4" class="ImageScreenshot" src="" alt="screenshot 4">
+
+            <div id="GooglePlay" style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+                <img src="/assets/play_arrow.png" alt="Google play arrow" style="height: 40px; position: relative;">
+
+                <a id="GooglePlayLink" target="_blank" href="" class="link" style="color: white; margin-top: 10px;">
+                    Download Here
+                </a>
+            </div>    
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; justify-content: center;">
+            <div style="display: block;">
+                <p style="font-family: fantasy; letter-spacing: 2px; display: block;">
+                    &copy; Vixionart 2024
+                </p>
+
+                <div style="display: flex; justify-content: center; margin-top: 20px;">
+                    <a href="" style="display: block;">
+                        <i class="fa-brands fa-instagram fa-2xl" style="color: white; margin: 5px;"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-x-twitter fa-2xl" style="color: white; margin: 5px;"></i>
+                    </a>
+    
+                    <a href="">
+                        <i class="fa-brands fa-linkedin fa-2xl"  style="color: white; margin: 5px"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

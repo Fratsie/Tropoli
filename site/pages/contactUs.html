@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/assets/icon32x32.png" type="image/x-icon">
+    <title>VIXIONART - CONTACT US</title>
+
+    <script src="../script.js"></script>
+    <script src="https://kit.fontawesome.com/123823bc9e.js" crossorigin="anonymous"></script>
+</head>
+<body id="contact" onload="checkNavBarCollapse('contact'), checkOutOfBorder('contactText')">
+
+    <div class="container">
+        <div id="contactNav" class="navbar">
+
+            <h1 style="font-family: fantasy; letter-spacing: 2px; margin-top: 10px; margin-bottom: 10px;">
+                VIXIONART
+            </h1>
+
+            <a id="link1" class="link" href="../index.html">HOME</a>
+            <a id="link2" class="link" href="/pages/projects.html">PROJECTS</a>
+            <a id="link3" class="link" href="#top" style="text-decoration: underline solid black;">CONTACT US</a>
+            <a id="link4" class="link" href="aboutUs.html">ABOUT US</a>
+            <a id="link5" class="link" href="/pages/services.html">OUR SERVICES</a>
+        </div>
+    </div>
+
+    <div id="contactTextParent" style="min-height: 100vh; background-color: #C6878F; text-align: center; overflow: hidden;">
+        <div id="contactText" style="position: relative; top: 20vh;">
+            <h2 class="header">
+                CONTACT US
+            </h2>
+
+            <p style="font-family: cursive; font-size: 14pt; color: white; margin-top: 20px; padding: 5px;">
+                If you want to contact us please fill in the form below or contact us through one of the other ways. <br>
+                When submitting the form it will send an email to us which we try to react to withing 24 hours. <br>
+                Do not send multiple mails about the same subject, be patient and your mail we be replyed to.
+            </p>
+
+            <div style="display: flex; justify-content: center; margin-top: 20px;">
+                <form id="contactForm" action="https://formspree.io/f/mzbqoaav" method="post" style="background-color: #CF7888; border: 1px solid #333; border-radius: 20px; height: 50vh; width: 70vw; padding: 5px; box-shadow: 5px 5px #333;">
+                    <label for="name" class="contactLabel">Name</label>
+                    <input type="text" class="contactInput" required placeholder="Name...">
+
+                    <br>
+
+                    <label for="email" class="contactLabel">Email</label>
+                    <input type="email" name="email" class="contactInput" required placeholder="example@gmail.com">
+
+                    <br>
+
+                    <div style="display: flex; align-items: center; justify-content: center; margin-left: -15px;">
+                        <label class="contactLabel" for="Message">Message</label>
+                        <textarea style="min-width: 40vw; max-width: 40vw; max-height: 20vh; min-height: 20vh; padding-top: 5px;" class="contactInput" name="message" cols="30" rows="10" required placeholder="Message..."></textarea>
+                    </div>
+
+                    <br>
+
+                    <button onclick="document.getElementById('contactForm').reset()" type="submit" style="width: 100px; height: 40px; border-radius: 20px; border: none;
+                    font-family: cursive;">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; justify-content: center;">
+            <div style="display: block;">
+                <p style="font-family: fantasy; letter-spacing: 2px; display: block;">
+                    &copy; Vixionart 2024
+                </p>
+
+                <div style="display: flex; justify-content: center; margin-top: 20px;">
+                    <a href="" style="display: block;">
+                        <i class="fa-brands fa-instagram fa-2xl" style="color: white; margin: 5px;"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-x-twitter fa-2xl" style="color: white; margin: 5px;"></i>
+                    </a>
+    
+                    <a href="">
+                        <i class="fa-brands fa-linkedin fa-2xl"  style="color: white; margin: 5px"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

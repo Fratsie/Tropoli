@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/assets/icon32x32.png" type="image/x-icon">
+    <title>VIXIONART - ABOUT US</title>
+
+    <script src="../script.js"></script>
+    <script src="https://kit.fontawesome.com/123823bc9e.js" crossorigin="anonymous"></script>
+</head>
+<body id="about" onload="checkOutOfBorder('aboutText'), checkNavBarCollapse('about')">
+
+    <div class="container">
+        <div id="aboutNav" class="navbar">
+
+            <h1 style="font-family: fantasy; letter-spacing: 2px; margin-top: 10px; margin-bottom: 10px;">
+                VIXIONART
+            </h1>
+
+            <a id="link1" class="link" href="../index.html" onclick="localStorage.setItem('activePage', 'home')">HOME</a>
+            <a id="link2" class="link" href="projects.html" onclick="localStorage.setItem('activePage', 'project')">PROJECTS</a>
+            <a id="link3" class="link" href="/pages/contactUs.html" onclick="localStorage.setItem('activePage', 'contact')">CONTACT US</a>
+            <a id="link4" class="link" href="#top" style="text-decoration: underline solid black;">ABOUT US</a>
+            <a id="link5" class="link" href="/pages/services.html">OUR SERVICES</a>
+        </div>
+    </div>
+
+    <div id="aboutTextParent" style="min-height: 100vh; max-width: 100vw; background-color: #97c1a9;  text-align: center; overflow: hidden;">
+        <div id="aboutText" style="position: relative; top: 20vh;">
+            <h2 class="header">
+                ABOUT US
+            </h2>
+
+            <p style="font-family: cursive; font-size: 14pt; margin-bottom: 20px; margin-top: 20px; padding: 5px; color: white;">
+                With a keen eye for innovation and a passion for excellence, we bring your ideas to life in the digital realm. <br>
+                Our developers have 4 years of experience in making websites with HTML & CSS. In making custom apps we have 2 years of experience. <br>
+                <br>
+                Our team consists of 2 developers and a manager. Our developers always do their best to create the best website possible. <br>
+                If your website is created and you want to change something? No problem, reach out to our manager and it will be fixed. <br>
+                We always try to provide the best service possible to our clients and to provide them with the best products that we can create. <br>
+            </p>
+
+            <div class="container">
+                <div id="profileBlocks" style="display: flex;">
+                    <div class="profile" id="profile1">
+                        <img src="/assets/profilePicture.png" alt="profile picture image">
+    
+                        <h2>
+                            Emir-Idris Akcay
+                        </h2>
+    
+                        <ul style="list-style: none; font-size: 10pt;">
+                            <li>
+                                - Developer
+                            </li>
+                            <li>
+                                - Turk
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="profile" id="profile2">
+                        <img src="/assets/profilePicture.png" alt="profile picture image">
+    
+                        <h2>
+                            Shalva van den Bergh
+                        </h2>
+    
+                        <ul style="list-style: none; font-size: 10pt;">
+                            <li>
+                                - Marketing Manager
+                            </li>
+                            <li>
+                                - Georgian
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="profile">
+                        <img src="/assets/profilePicture.png" alt="profile picture image">
+    
+                        <h2>
+                            Mats Vanspringel
+                        </h2>
+    
+                        <ul style="list-style: none; font-size: 10pt;">
+                            <li>
+                                - Developer
+                            </li>
+                            <li>
+                                - Belgian
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div style="position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; justify-content: center;">
+            <div style="display: block;">
+                <p style="font-family: fantasy; letter-spacing: 2px; display: block;">
+                    &copy; Vixionart 2024
+                </p>
+
+                <div style="display: flex; justify-content: center; margin-top: 20px;">
+                    <a href="" style="display: block;">
+                        <i class="fa-brands fa-instagram fa-2xl" style="color: white; margin: 5px;"></i>
+                    </a>
+
+                    <a href="">
+                        <i class="fa-brands fa-x-twitter fa-2xl" style="color: white; margin: 5px;"></i>
+                    </a>
+    
+                    <a href="">
+                        <i class="fa-brands fa-linkedin fa-2xl"  style="color: white; margin: 5px"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
