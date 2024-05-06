@@ -127,11 +127,11 @@ function checkNavBarCollapse(bodyId){
 
             document.getElementById('arrow').style.opacity = 100; 
         }
-        else if(bodyId == "contactus"){
+        else if(bodyId == "contact"){
             homeLink.href = "../index.html";
-            contactLink = "#top";
-            aboutLink = "/pages/aboutUs.html";
-            projectLink = "/pages/projects.html";
+            contactLink.href = "#top";
+            aboutLink.href = "/pages/aboutUs.html";
+            projectLink.href = "/pages/projects.html";
             servicesLink.href = "/pages/services.html";
         }
         else if(bodyId == "about"){
@@ -170,6 +170,7 @@ function checkNavBarCollapse(bodyId){
         dropdown.id = "dropdownImg";
         dropdown.height = "20";
         dropdown.style.fontFamily = "fantasy";
+
 
         //add div and arrow to navbar
         divDropdown.append(homeLink);
