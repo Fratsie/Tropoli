@@ -120,32 +120,32 @@ function checkNavBarCollapse(bodyId){
 
         if(bodyId == "index"){
             homeLink.href = "#top";
-            contactLink.href = "/pages/contactUs.html";
-            aboutLink.href = "/pages/aboutUs.html";
-            projectLink.href = "/pages/projects.html";
-            servicesLink.href = "/pages/services.html";
+            contactLink.href = "/Vixionary/pages/contactUs.html";
+            aboutLink.href = "/Vixionary/pages/aboutUs.html";
+            projectLink.href = "/Vixionary/pages/projects.html";
+            servicesLink.href = "/Vixionary/pages/services.html";
 
             document.getElementById('arrow').style.opacity = 100; 
         }
         else if(bodyId == "contact"){
             homeLink.href = "../index.html";
             contactLink.href = "#top";
-            aboutLink.href = "/pages/aboutUs.html";
-            projectLink.href = "/pages/projects.html";
-            servicesLink.href = "/pages/services.html";
+            aboutLink.href = "/aboutUs.html";
+            projectLink.href = "/projects.html";
+            servicesLink.href = "/services.html";
         }
         else if(bodyId == "about"){
             homeLink.href = "../index.html";
-            contactLink.href = "/pages/contactUs.html";
+            contactLink.href = "/contactUs.html";
             aboutLink.href = "#top";
-            projectLink.href = "/pages/projects.html";
-            servicesLink.href = "/pages/services.html";
+            projectLink.href = "/projects.html";
+            servicesLink.href = "/services.html";
         }
         else if(bodyId == "services"){
             homeLink.href = "../index.html";
-            contactLink.href = "/pages/contactUs.html";
-            aboutLink.href = "/pages/aboutUs.html";
-            projectLink.href = "/pages/projects.html";
+            contactLink.href = "/contactUs.html";
+            aboutLink.href = "/aboutUs.html";
+            projectLink.href = "/projects.html";
             servicesLink.href = "#top";
 
             document.getElementById('arrow1').style.opacity = 100;
@@ -153,10 +153,10 @@ function checkNavBarCollapse(bodyId){
         }
         else{
             homeLink.href = "../index.html";
-            contactLink.href = "/pages/contactUs.html";
-            aboutLink.href = "/pages/aboutUs.html";
+            contactLink.href = "/contactUs.html";
+            aboutLink.href = "/aboutUs.html";
             projectLink.href = "#top";
-            servicesLink.href = "/pages/services.html";
+            servicesLink.href = "/services.html";
 
             if(bodyId == "projectInfo"){
                 for(let i = 1; i<=4; i++){
