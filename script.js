@@ -22,7 +22,7 @@ function getProjectName(elementId, prefix){
 //function for retrieving project description and setting it to an element
 function getProjectDetails(elementId){
     //get data out of json file
-    fetch('/data.json').then((response) => response.json()).then(function(data){
+    fetch('/Vixionary/data.json').then((response) => response.json()).then(function(data){
         //get initials of project
         const objNameArray = localStorage.getItem("projectName"); //returns array with project name in
         objName = "";
