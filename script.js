@@ -58,7 +58,7 @@ function getProjectDetails(elementId){
 //function to increase height of div if neccessary
 function checkOutOfBorder(id){
     //get height of id
-    height = document.getElementById(id).offsetHeight;
+    let height = document.getElementById(id).offsetHeight;
 
     //check if height is greater then 620 (px)
     if(height > 620){
