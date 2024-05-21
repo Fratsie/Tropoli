@@ -89,6 +89,8 @@ function checkNavBarCollapse(bodyId){
 
     //check if width is to small
     if(bodyWidth < 595){
+        console.log(bodyWidth);
+
         //for loop to remove links
         for(let i = 1; i <= 5; i++){
             //remove links
@@ -130,22 +132,22 @@ function checkNavBarCollapse(bodyId){
         else if(bodyId == "contact"){
             homeLink.href = "../index.html";
             contactLink.href = "#top";
-            aboutLink.href = "/aboutUs.html";
-            projectLink.href = "/projects.html";
-            servicesLink.href = "/services.html";
+            aboutLink.href = "/Vixionary/aboutUs.html";
+            projectLink.href = "/Vixionary/projects.html";
+            servicesLink.href = "/Vixionary/services.html";
         }
         else if(bodyId == "about"){
             homeLink.href = "../index.html";
-            contactLink.href = "/contactUs.html";
+            contactLink.href = "/Vixionary/contactUs.html";
             aboutLink.href = "#top";
-            projectLink.href = "/projects.html";
-            servicesLink.href = "/services.html";
+            projectLink.href = "/Vixionary/projects.html";
+            servicesLink.href = "/Vixionary/services.html";
         }
         else if(bodyId == "services"){
             homeLink.href = "../index.html";
-            contactLink.href = "/contactUs.html";
-            aboutLink.href = "/aboutUs.html";
-            projectLink.href = "/projects.html";
+            contactLink.href = "/Vixionary/contactUs.html";
+            aboutLink.href = "/Vixionary/aboutUs.html";
+            projectLink.href = "/Vixionary/projects.html";
             servicesLink.href = "#top";
 
             document.getElementById('arrow1').style.opacity = 100;
@@ -153,10 +155,10 @@ function checkNavBarCollapse(bodyId){
         }
         else{
             homeLink.href = "../index.html";
-            contactLink.href = "/contactUs.html";
-            aboutLink.href = "/aboutUs.html";
+            contactLink.href = "/Vixionary/contactUs.html";
+            aboutLink.href = "/Vixionary/aboutUs.html";
             projectLink.href = "#top";
-            servicesLink.href = "/services.html";
+            servicesLink.href = "/Vixionary/services.html";
 
             if(bodyId == "projectInfo"){
                 for(let i = 1; i<=4; i++){
