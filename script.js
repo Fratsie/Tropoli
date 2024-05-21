@@ -64,8 +64,8 @@ function checkOutOfBorder(id){
     if(height > 620){
         if(id == 'aboutText'){
             document.getElementById('profileBlocks').style.display = "block";
-                blockHeight = document.getElementById('profile1').offsetHeight;
-                document.getElementById(id + 'Parent').style.height = (height + (blockHeight * 3)) + 50 + "px";
+            blockHeight = document.getElementById('profile1').offsetHeight;
+            document.getElementById(id + 'Parent').style.height = height + blockHeight + 50 + "px";
         }
         else{
             //change height to needed height and add 50 px margin
@@ -89,8 +89,6 @@ function checkNavBarCollapse(bodyId){
 
     //check if width is to small
     if(bodyWidth < 595){
-        console.log(bodyWidth);
-
         //for loop to remove links
         for(let i = 1; i <= 5; i++){
             //remove links
@@ -132,22 +130,22 @@ function checkNavBarCollapse(bodyId){
         else if(bodyId == "contact"){
             homeLink.href = "../index.html";
             contactLink.href = "#top";
-            aboutLink.href = "/Vixionary/aboutUs.html";
-            projectLink.href = "/Vixionary/projects.html";
-            servicesLink.href = "/Vixionary/services.html";
+            aboutLink.href = "/Vixionary/pages/aboutUs.html";
+            projectLink.href = "/Vixionary/pages/projects.html";
+            servicesLink.href = "/Vixionary/pages/services.html";
         }
         else if(bodyId == "about"){
             homeLink.href = "../index.html";
-            contactLink.href = "/Vixionary/contactUs.html";
+            contactLink.href = "/Vixionary/pages/contactUs.html";
             aboutLink.href = "#top";
-            projectLink.href = "/Vixionary/projects.html";
-            servicesLink.href = "/Vixionary/services.html";
+            projectLink.href = "/Vixionary/pages/projects.html";
+            servicesLink.href = "/Vixionary/pages/services.html";
         }
         else if(bodyId == "services"){
             homeLink.href = "../index.html";
-            contactLink.href = "/Vixionary/contactUs.html";
-            aboutLink.href = "/Vixionary/aboutUs.html";
-            projectLink.href = "/Vixionary/projects.html";
+            contactLink.href = "/Vixionary/pages/contactUs.html";
+            aboutLink.href = "/Vixionary/pages/aboutUs.html";
+            projectLink.href = "/Vixionary/pages/projects.html";
             servicesLink.href = "#top";
 
             document.getElementById('arrow1').style.opacity = 100;
@@ -155,10 +153,10 @@ function checkNavBarCollapse(bodyId){
         }
         else{
             homeLink.href = "../index.html";
-            contactLink.href = "/Vixionary/contactUs.html";
-            aboutLink.href = "/Vixionary/aboutUs.html";
+            contactLink.href = "/Vixionary/pages/contactUs.html";
+            aboutLink.href = "/Vixionary/pages/aboutUs.html";
             projectLink.href = "#top";
-            servicesLink.href = "/Vixionary/services.html";
+            servicesLink.href = "/Vixionary/pages/services.html";
 
             if(bodyId == "projectInfo"){
                 for(let i = 1; i<=4; i++){
