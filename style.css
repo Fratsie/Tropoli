@@ -67,7 +67,7 @@
     margin: 10px;
     padding: 10px;
 
-    font-family: cursive;
+    font-family: Verdana;
     letter-spacing: 2px;
     color: white;
     background-color: #ffffff44;
@@ -84,7 +84,7 @@
     margin: 10px;
     padding: 20px;
 
-    font-family: cursive;
+    font-family: verdana;
     letter-spacing: 2px;
     color: white;
     background-color: #ffffff44;
@@ -129,7 +129,7 @@
     border-radius: 20px;
     margin: 15px;
 
-    font-family: cursive;
+    font-family: verdana;
     font-size: 12pt;
     padding-left: 5px;
 
@@ -139,7 +139,7 @@
 
 .contactLabel{
     color: white;
-    font-family: cursive;
+    font-family: verdana;
     font-size: 14pt;
 }
 
