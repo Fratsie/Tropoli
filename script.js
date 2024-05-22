@@ -149,6 +149,7 @@ function checkNavBarCollapse(bodyId){
             servicesLink.href = "#top";
 
             document.getElementById('arrow1').style.opacity = 100;
+            document.getElementById('arrow2').style.opacity = 100;
             document.getElementById('serviceBlocks').style.display = 'block';
         }
         else{
