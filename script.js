@@ -58,7 +58,7 @@ function getProjectDetails(elementId){
 //function to increase height of div if neccessary
 function checkOutOfBorder(id){
     //get height of id
-    let height = document.getElementById(id).offsetHeight;
+    height = document.getElementById(id).offsetHeight;
 
     //check if height is greater then 620 (px)
     if(height > 620){
@@ -73,7 +73,7 @@ function checkOutOfBorder(id){
         }
     }
     
-    if(id == "projectText" && height > 196){
+    if(id == "projectText" && height > 155){
         let width = document.getElementById('projectTextParent').offsetWidth;
         let wordsPerLine = width/5; //average 5 words per line
         let height = Math.round((((localStorage.getItem("description").length) / wordsPerLine) * 15) + (4*250)); //12px height of text with 4 images of each 250px
@@ -156,7 +156,7 @@ function checkNavBarCollapse(bodyId){
             homeLink.href = "../index.html";
             contactLink.href = "/Vixionary/pages/contactUs.html";
             aboutLink.href = "/Vixionary/pages/aboutUs.html";
-            projectLink.href = "#top";
+            projectLink.href = "/Vixionary/pages/projects.html";
             servicesLink.href = "/Vixionary/pages/services.html";
 
             if(bodyId == "projectInfo"){
