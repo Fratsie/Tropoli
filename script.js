@@ -89,6 +89,9 @@ function checkNavBarCollapse(bodyId){
 
     //check if width is to small
     if(bodyWidth < 595){
+        //make title smaller
+        document.getElementById('title').style.fontSize = '36pt';
+
         //for loop to remove links
         for(let i = 1; i <= 5; i++){
             //remove links
