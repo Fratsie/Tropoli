@@ -157,6 +157,13 @@ function checkNavBarCollapse(bodyId){
             document.getElementById('arrow2').style.opacity = 100;
             document.getElementById('serviceBlocks').style.display = 'block';
         }
+        else if(bodyId = "privacy"){
+            homeLink.href = "../index.html";
+            contactLink.href = "/Vixionary/pages/contactUs.html";
+            aboutLink.href = "/Vixionary/pages/aboutUs.html";
+            projectLink.href = "/Vixionary/pages/projects.html";
+            servicesLink.href = "/Vixionary/pages/services.html";
+        }
         else{
             homeLink.href = "../index.html";
             contactLink.href = "/Vixionary/pages/contactUs.html";
