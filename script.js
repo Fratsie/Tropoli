@@ -22,7 +22,7 @@ function getProjectName(elementId, prefix){
 //function for retrieving project description and setting it to an element
 function getProjectDetails(elementId){
     //get data out of json file
-    fetch('/Vixionary/data.json').then((response) => response.json()).then(function(data){
+    fetch('/Tropoli/data.json').then((response) => response.json()).then(function(data){
         //get initials of project
         const objNameArray = localStorage.getItem("projectName"); //returns array with project name in
         objName = "";
@@ -125,32 +125,32 @@ function checkNavBarCollapse(bodyId){
 
         if(bodyId == "index"){
             homeLink.href = "#top";
-            contactLink.href = "/Vixionary/pages/contactUs.html";
-            aboutLink.href = "/Vixionary/pages/aboutUs.html";
-            projectLink.href = "/Vixionary/pages/projects.html";
-            servicesLink.href = "/Vixionary/pages/services.html";
+            contactLink.href = "/Tropoli/pages/contactUs.html";
+            aboutLink.href = "/Tropoli/pages/aboutUs.html";
+            projectLink.href = "/Tropoli/pages/projects.html";
+            servicesLink.href = "/Tropoli/pages/services.html";
 
             document.getElementById('arrow').style.opacity = 100; 
         }
         else if(bodyId == "contact"){
             homeLink.href = "../index.html";
             contactLink.href = "#top";
-            aboutLink.href = "/Vixionary/pages/aboutUs.html";
-            projectLink.href = "/Vixionary/pages/projects.html";
-            servicesLink.href = "/Vixionary/pages/services.html";
+            aboutLink.href = "/Tropoli/pages/aboutUs.html";
+            projectLink.href = "/Tropoli/pages/projects.html";
+            servicesLink.href = "/Tropoli/pages/services.html";
         }
         else if(bodyId == "about"){
             homeLink.href = "../index.html";
-            contactLink.href = "/Vixionary/pages/contactUs.html";
+            contactLink.href = "/Tropoli/pages/contactUs.html";
             aboutLink.href = "#top";
-            projectLink.href = "/Vixionary/pages/projects.html";
-            servicesLink.href = "/Vixionary/pages/services.html";
+            projectLink.href = "/Tropoli/pages/projects.html";
+            servicesLink.href = "/Tropoli/pages/services.html";
         }
         else if(bodyId == "services"){
             homeLink.href = "../index.html";
-            contactLink.href = "/Vixionary/pages/contactUs.html";
-            aboutLink.href = "/Vixionary/pages/aboutUs.html";
-            projectLink.href = "/Vixionary/pages/projects.html";
+            contactLink.href = "/Tropoli/pages/contactUs.html";
+            aboutLink.href = "/Tropoli/pages/aboutUs.html";
+            projectLink.href = "/Tropoli/pages/projects.html";
             servicesLink.href = "#top";
 
             document.getElementById('arrow1').style.opacity = 100;
@@ -159,17 +159,17 @@ function checkNavBarCollapse(bodyId){
         }
         else if(bodyId = "privacy"){
             homeLink.href = "../index.html";
-            contactLink.href = "/Vixionary/pages/contactUs.html";
-            aboutLink.href = "/Vixionary/pages/aboutUs.html";
-            projectLink.href = "/Vixionary/pages/projects.html";
-            servicesLink.href = "/Vixionary/pages/services.html";
+            contactLink.href = "/Tropoli/pages/contactUs.html";
+            aboutLink.href = "/Tropoli/pages/aboutUs.html";
+            projectLink.href = "/Tropoli/pages/projects.html";
+            servicesLink.href = "/Tropoli/pages/services.html";
         }
         else{
             homeLink.href = "../index.html";
-            contactLink.href = "/Vixionary/pages/contactUs.html";
-            aboutLink.href = "/Vixionary/pages/aboutUs.html";
-            projectLink.href = "/Vixionary/pages/projects.html";
-            servicesLink.href = "/Vixionary/pages/services.html";
+            contactLink.href = "/Tropoli/pages/contactUs.html";
+            aboutLink.href = "/Tropoli/pages/aboutUs.html";
+            projectLink.href = "/Tropoli/pages/projects.html";
+            servicesLink.href = "/Tropoli/pages/services.html";
 
             if(bodyId == "projectInfo"){
                 for(let i = 1; i<=4; i++){
